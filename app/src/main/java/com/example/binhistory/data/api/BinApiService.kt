@@ -6,5 +6,5 @@ import retrofit2.http.Path
 
 interface BinApiService {
     @GET("{bin}")
-    suspend fun getCardInf(@Path("bin") bin: String): CardInfoResponse
+    suspend fun getCardInfo(@Path("bin") bin: String): CardInfoResponse
 }
