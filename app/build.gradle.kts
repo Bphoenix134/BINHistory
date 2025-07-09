@@ -59,6 +59,7 @@ dependencies {
     // Hilt
     implementation(libs.google.dagger.hilt.android)
     ksp(libs.google.dagger.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // Retrofit
     implementation(libs.squareup.retrofit2.retrofit)
