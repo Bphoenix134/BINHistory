@@ -2,9 +2,10 @@ package com.example.binhistory.data.repository
 
 import com.example.binhistory.data.api.BinApiService
 import com.example.binhistory.data.local.CardHistoryDao
+import com.example.binhistory.data.mapper.toDomain
+import com.example.binhistory.data.mapper.toEntity
+import com.example.binhistory.domain.model.CardInfo
 import com.example.binhistory.domain.repository.CardRepository
-import com.example.data.mapper.toDomain
-import com.example.data.mapper.toEntity
 import javax.inject.Inject
 
 class CardRepositoryImpl @Inject constructor(
