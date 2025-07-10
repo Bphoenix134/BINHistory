@@ -1,4 +1,4 @@
-package com.example.binhistory.presentaion.cardInfo
+package com.example.binhistory.presentation.cardInfo
 
 import com.example.binhistory.domain.model.CardInfo
 
