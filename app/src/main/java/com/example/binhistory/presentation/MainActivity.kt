@@ -1,11 +1,11 @@
-package com.example.binhistory.presentaion
+package com.example.binhistory.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.*
 import androidx.navigation.compose.rememberNavController
-import com.example.binhistory.presentaion.navigation.NavGraph
+import com.example.binhistory.presentation.navigation.NavGraph
+import com.example.binhistory.ui.theme.BINHistoryTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MaterialTheme {
+            BINHistoryTheme {
                 val navController = rememberNavController()
                 NavGraph(navController = navController)
             }
