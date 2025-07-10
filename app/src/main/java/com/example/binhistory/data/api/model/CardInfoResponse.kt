@@ -8,6 +8,6 @@ data class CardInfoResponse(
     @SerializedName("type") val type:  String?,
     @SerializedName("brand") val brand:  String?,
     @SerializedName("prepaid") val prepaid:  Boolean?,
-    @SerializedName("country") val country:  String?,
-    @SerializedName("bank") val bank:  String?
+    @SerializedName("country") val country:  Country?,
+    @SerializedName("bank") val bank:  Bank?
 )
